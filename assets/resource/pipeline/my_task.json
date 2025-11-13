@@ -1,5 +1,9 @@
 {
-    "MyTask1": {},
+    "開始測試": {
+      "action": {
+        "click": [540, 360]
+      }
+    },
     "MyTask2": {},
     "MyTask3": {},
     "MyTask4": {
