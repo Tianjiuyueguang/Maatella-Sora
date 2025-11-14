@@ -1,15 +1,48 @@
 {
-    "開始測試": {
-      "action": {
-        "click": [540, 360]
-      }
+    "进入游戏": {
+      "recognition": "OCR",
+      "expected": "任意區域進入游戲",
+      "action":"click",
+      "target": {
+        "x": 540,
+        "y": 180
+      },
+      "next":[
+        "小月卡",
+        "每日签到",
+        "每日互动"
+      ]
     },
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+    "小月卡": {
+      "recognition": "OCR",
+      "expected": "盈月星願配送",
+      "action":"click",
+      "target": {
+        "x": 540,
+        "y": 180
+      },
+      "next":[
+        "每日签到",
+        "每日互动"
+      ]
+    },
+    "每日签到": {
+      "recognition": "OCR",
+      "expected": "每日簽到",
+      "action":"click",
+      "target": {
+        "x": 540,
+        "y": 180
+      },
+      "next":[
+        "每日互动"
+      ]
+    },
+    "每日互动": {
+        "action": "click",
+        "target": {
+          "x": 540,
+          "y": 180
+        }
     }
 }
